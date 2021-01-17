@@ -1,0 +1,32 @@
+.star{
+    display: inline-block;
+    position: relative;
+    height: 20px ;
+    width: 20px;
+    background:#D5B04D;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.star .star-fill{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: 12px ;
+    width: 12px;
+    background: #fff;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.active .star-fill{
+    background:#D5B04D;
+}
+.wrap-star{
+    position: relative;
+    top: 3px;
+}
+/* ------------------------ */
+.block-add-product{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

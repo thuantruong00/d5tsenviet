@@ -1,0 +1,28 @@
+#order-success{
+    height: 550px;
+    padding: 15% 0;
+}
+
+#order-success .check-icon svg{
+    font-size: 48px;
+    margin: 10px;
+}
+#order-success .content{
+    font-size: 17px;
+    margin: 2rem 0;
+}
+
+.btn-green{
+    background-color: #D5B04D;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:500px){
+    #order-success {
+        height: 550px;
+        padding: 35% 0;
+    }
+}

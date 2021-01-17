@@ -1,0 +1,13 @@
+@media only screen and (max-width:991px){
+    .wrap-tab{
+        overflow-x: scroll;
+    }
+    .wrap-tab::-webkit-scrollbar{
+        opacity: 0;
+        height: 0;
+    }
+    .wrap-slider-tab .nav-link{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

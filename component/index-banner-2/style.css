@@ -1,0 +1,122 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 20px;
+}
+
+.grid-container > div {
+    text-align: center;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+}
+.grid-container img, .grid-container .relative{
+    width: 100%;
+    height: 100%;
+}
+.grid-container2 img, .grid-container2 .relative{
+    width: 100%;
+    height: 100%;
+}
+.item1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+
+}
+.item4{
+    grid-column:1/3;
+}
+
+.relative>img{
+    width: 100%;
+    border-radius: 24px;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.more{
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    border-radius: 24px;
+    padding: 0px 20px;
+}
+.btn-more{
+    position: absolute;
+    right: 20px;
+    padding: 8px 15px;
+    top: 0;
+    border-radius: 12px;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    display: block;
+    transition: all 0.4s;
+}
+.btn-more:hover{
+    color: #dedede;
+    border-color: #dedede;
+}
+.relative>.dark-layer{
+    border-radius: 24px;
+}
+.post-item>img{
+    width: 267px;
+    height: 185px;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 20px;
+    padding-top: 20px;
+}
+
+.grid-container2 > div {
+    text-align: center;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+}
+.item5{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.money{
+    font-size: 15px;
+    font-weight: bold;
+    color:#ff6b20;
+}
+.lsmoney{
+    font-size: 15px;
+    font-weight: normal;
+    -moz-columns: #444444;
+         columns: #444444;;
+}
+.buy{
+    background-color:#D5B04D;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+}
+.top{
+    text-align: center;
+}
+@media only screen and (max-width:500px){
+    .grid-container .item1,
+    .grid-container2 .item5{
+        height: 350px;
+    }
+    .grid-container .item4{
+        height: 175px;
+    }
+    .more{
+        padding: 0px 10px;
+    }
+    .more .large-size{
+        font-size: 16px!important;
+    }
+}

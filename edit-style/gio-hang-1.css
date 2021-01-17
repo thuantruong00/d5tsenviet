@@ -1,0 +1,308 @@
+.btn-green{
+    background-color: #D5B04D;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.btn-gray{
+    background-color: #4444442c;
+    color: #444444;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.payment-method .address{
+    display: none;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+    padding-top: 0;
+}
+.payment-method .address hr{
+    margin: 0 0 1rem 0;
+}
+.payment-method{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* input radio */
+input[type="radio"]{
+    display: none;
+}
+input:checked + .drawing {
+    border-radius: 12px 12px 0 0;
+}
+input:checked ~ .address{
+    display: block;
+}
+input:checked + .drawing .dot{
+    display: inline-block;
+}
+input:checked + .drawing .circle{
+    border: 1px solid #D5B04D;
+}
+input:checked + .drawing .label{
+    color:  #D5B04D;
+}
+.drawing label{
+    margin: 0;
+}
+.payment-method .drawing{
+    background-color: white;
+    border-radius: 12px;
+    width: 100%;
+    padding: 20px 25px;
+}
+.drawing .circle{
+    border: 1px solid rgba(107, 107, 107, 0.507);
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    border-radius: 100%;
+    top: 3px;
+}
+.drawing .dot{
+    display: none;
+    width: 9px;
+    height: 8px;
+    border-radius: 100%;
+    position: relative;
+    background-color: #D5B04D;
+    margin: 6px;
+    left: -24px;
+    top: 3px;
+}
+.drawing .label{
+    position: absolute;
+    left: 70px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(107, 107, 107, 0.507);
+}
+
+.wrap-edit-address .drawing{
+    padding: 0px 20px;
+}
+.wrap-edit-address .drawing .list-address{
+    padding: 5px 20px;
+}
+.wrap-edit-address input:checked + .drawing .list-address{
+    padding-left: 0;
+}
+.wrap-edit-address input:checked + .drawing .list-address b{
+    color: #444444;
+}
+.wrap-edit-address input:checked + .drawing .list-address span{
+    color: #454545;
+}
+
+/* modal */
+.close{
+    text-align: right;
+    position: relative;
+}
+.modal-dialog {
+    max-width: 800px;
+}
+.address-remove{
+    float: right;
+    background-color: transparent;
+    border: 0;
+}
+.wrap-address.active{
+    text-decoration: none;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.3);
+    transition:0.4s all;
+}
+
+#do-edit .modal-dialog{
+    max-width: 600px;
+}
+.modal-dialog h3.title{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.form__input{
+    border: none;
+    background-color: rgba(73, 73, 73, 0.075);
+    height: 3rem;
+    border-radius: 8px;
+}
+.form__input:focus, .form__input:active{
+    background-color: rgba(254, 161, 32, 0.075);
+    border: solid 1.5px #fea020;
+    box-shadow:none;
+}
+input:focus{
+    outline: none;
+
+}
+
+.infor-form button.btn-submit{
+    border-radius: 8px;
+    background-color: #fea020!important;
+    width: 100%;
+    margin-top: 5%;
+}
+#do-edit .modal-dialog [class*="col-"]{
+    padding: 0;
+}
+#do-edit .modal-dialog .row>[class*="col-"]{
+    padding-right: 10px!important;
+}
+#do-edit .modal-content{
+    padding: 2rem;
+}
+#do-edit .form-group{
+    margin-bottom: 2rem;
+}
+#do-edit .remove-address{
+    display: block;
+}
+.btn-submit{
+    width: 100%;
+    background-color: #fea020;
+    color: white;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+.address{
+    background-color: white;
+}
+.address ul{
+    padding: 20px;
+}
+
+@media only screen and (max-width:500px){
+    .payment{
+        padding: 10px 25px;
+    }
+    .payment-method .drawing {
+        padding: 15px 15px;
+    }
+    .modal-dialog .address {
+        padding: 0 10px 0 0;
+        background-color: white;
+    }
+    .modal-dialog .col-lg-6{
+        padding: 0;
+    }
+    .modal-dialog .address-content li {
+        font-size: 13px;
+    }
+    .modal-dialog .address-footer, .modal-dialog .address-footer{
+        font-size: 12px;
+    }
+    .drawing .label {
+        font-size: 14px;
+        left: 65px;
+        width: 75%;
+    }
+    .drawing .dot {
+        width: 5px;
+        height: 5px;
+        margin: 3px;
+        left: -18px;
+        top: 0px;
+    }
+    .drawing .circle {
+        width: 16px;
+        height: 16px;
+        top: 3px;
+    }
+    .payment-method .drawing{
+        height: 3.75rem;
+    }
+    #cash + .drawing{
+        height: 3.27rem!important;
+    }
+    .modal-dialog {
+        max-width: 330px;
+        margin: 3rem auto;
+        height: 550px;
+        overflow-y: scroll;
+        border-radius: 12px;
+    }
+    .wrap-address.active{
+        text-decoration: none;
+        color: black;
+        border-radius: 0;
+        box-shadow: none;
+        border-right: 2px solid rgba(168, 167, 167, 0.329);
+        transition:0.4s all;
+        
+    }
+    .modal-dialog h3.title{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+    .modal-dialog .wrap-address{
+        margin-bottom: 2rem;
+    }
+    .modal-dialog .button-add-address{
+        height: 160px;
+    }
+    .modal-dialog .wrap-address:hover{
+        box-shadow: none;
+    }
+ 
+    
+    #do-edit .modal-dialog {
+        margin: 2rem auto;
+        height: 579px;
+    }
+    #do-edit .modal-content {
+        padding: 1rem;
+    }
+    #do-edit .form-group {
+        margin-bottom: 1rem;
+    }
+    .form-group>label{
+        font-size: 14px;
+    }
+    .form__input{
+        height: 2.25rem;
+    }
+    #do-edit .modal-dialog h3.title{
+        margin-bottom: 1rem;
+    }
+    textarea.form-control {
+        height: 5rem;
+    }
+    .btn-submit{
+        margin: .5rem 0;
+    }
+
+    .wrap-edit-address .drawing{
+        height: 80px;
+    }
+    .wrap-edit-address .drawing .list-address{
+        width: 88%;
+        font-size: 16px;
+    }
+    .wrap-edit-address .drawing .circle {
+        width: 16px;
+        height: 16px;
+        top: -40px;
+    }
+    .wrap-edit-address .drawing .dot {
+        top: -43px;
+    }
+
+    .wrap-edit-address .btn-green{
+        margin-left: 20px!important;
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    .wrap-edit-address .btn-gray{
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}

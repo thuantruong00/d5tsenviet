@@ -1,0 +1,79 @@
+.modal-header, .modal-footer{
+    border: 0!important;
+}
+.modal-body,.modal-header, .modal-footer{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.modal-footer{
+    padding-top: 0;
+}
+.box-shadow-top-1 {
+    box-shadow: inset 0px 15px 20px 1px #F4F4F5;
+}
+.width-100{
+    width: 100%;
+}
+.address-form label{
+    display: block;
+    width: 100%;
+}
+.my-gap{
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+.address-form textarea:focus{
+    outline: none;
+}
+.address-form textarea,
+.address-form input{
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#check-addr-form{
+    display: inline-block;
+    width: 30px;
+}
+.address-form select{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #777777;
+}
+.address-form select:focus{
+    outline: none;
+}
+.check-box-addr{
+    cursor: pointer;
+}
+.wrap-icon-check{
+    display: inline-block;
+    padding: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #D5B04D;
+    border-radius: 2px;
+    transform: translateY(2px);
+    margin-right: 5px;
+}
+.icon-check{
+    height: 16px;
+    width: 16px;
+    background:#D5B04D;
+    -webkit-clip-path: polygon(15% 30%,37% 55%, 80% 10%, 80% 20%, 35% 75%, 10% 35%);
+            clip-path: polygon(15% 30%,37% 55%, 80% 10%, 80% 20%, 35% 75%, 10% 35%);
+}
+@media only screen and (max-width:500px){
+    .modal-dialog {
+        width: 100%!important;
+        margin: 0 auto;
+    }
+}

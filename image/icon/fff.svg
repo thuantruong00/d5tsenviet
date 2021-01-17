@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.1;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #444f5e;
+      }
+    </style>
+  </defs>
+  <g id="data_image_svg_xml_12_" data-name="data_image_svg+xml;… (12)" class="cls-1">
+    <path id="Path_1489" data-name="Path 1489" class="cls-2" d="M48,0V48H0V0Z"/>
+    <g id="Group_8632" data-name="Group 8632" transform="translate(4.805 6.407)">
+      <path id="Path_1490" data-name="Path 1490" class="cls-3" d="M47.554,58.087a1.6,1.6,0,0,0,1-.331A20.481,20.481,0,0,0,55.59,42.081V26.087a3.2,3.2,0,0,0-3.2-3.2h-9.6a3.2,3.2,0,0,0-3.2,3.2v12.8a3.2,3.2,0,0,0,3.2,3.2h6.464c.04,2.848-.239,8.939-2.98,13.476a1.6,1.6,0,0,0,1.278,2.53Zm-22.394,0a1.6,1.6,0,0,0,1-.331A20.481,20.481,0,0,0,33.2,42.081V26.087a3.2,3.2,0,0,0-3.2-3.2H20.4a3.2,3.2,0,0,0-3.2,3.2v12.8a3.2,3.2,0,0,0,3.2,3.2h6.464c.04,2.848-.239,8.939-2.98,13.476a1.6,1.6,0,0,0,1.278,2.53Z" transform="translate(-17.2 -22.888)"/>
+    </g>
+  </g>
+</svg>

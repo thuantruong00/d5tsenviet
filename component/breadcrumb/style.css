@@ -1,0 +1,49 @@
+.my-breadcrumb ul li{
+    display: inline-block;
+}
+.my-breadcrumb{
+    padding: 5px 0px;
+}
+.my-breadcrumb ul li a{
+    font-size: 14px;
+
+}
+.my-breadcrumb ul li a,
+.my-breadcrumb ul li i{
+    color: #444444;
+    margin-right: 10px;
+    opacity: 0.7;
+    padding: 10px 5px;
+    display: inline-block;
+}
+.my-breadcrumb ul{
+    margin: 0;
+}
+.my-breadcrumb ul li i{
+    position: relative;
+    top: 2px;
+}
+
+.my-breadcrumb .active{
+    opacity: 1;
+    font-weight: 600;
+}
+.box-shadow-top{
+    box-shadow: inset 0px 10px 10px 1px #EDEDEE;
+}
+@media only screen and (max-width:500px){
+    .my-breadcrumb ul li a, .my-breadcrumb ul li i {
+        margin-right: 5px;
+    }
+    .my-breadcrumb ul li a,
+    .my-breadcrumb ul li i{
+        color: #444444;
+        margin-right: 0px;
+        opacity: 0.7;
+        /* padding: 10px 5px; */
+        display: inline;
+    }
+    .my-breadcrumb ul li{
+        display: inline;
+    }
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">	
+	  <link rel="stylesheet" href="asset/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="asset/setup.css">
+    <link rel="stylesheet" type="text/css" href="edit-style/dangki-dangnhap.css">
+</head>
+<body>
+<button type="submit" name="commit" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#modal-login">
+	Login/Signup
+</button>
+
+<!----- login ----->
+<section>
+    <div class="modal fade" tabindex="-1" id="modal-login" role="dialog">
+      <div class="modal-dialog modal-md">
+        <form>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Đăng nhập</h4>
+              <button type="button" class="close-form" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" class="form-control form__input" type="email" name="email" placeholder="Nhập email" />
+              </div>
+              <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <div class="input-icons">
+                  <a href="#">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                  </a>
+                  <input id="password" class="form-control form__input" type="password" name="password"
+                    placeholder="Nhập mật khẩu" />
+                </div>
+              </div>
+              <div class="form-group text-right">
+                <a class="" href="#" data-dismiss="modal" data-toggle="modal"
+                  data-target="#modal-forgot-password">
+                  Quên mật khẩu
+                </a>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn-submit" data-dismiss="modal" data-toggle="modal"
+                data-target="#modal-login-confirm">
+                  Đăng nhập
+                </button>
+              </div>
+
+              <div class="text-center form-group">
+                Bạn chưa có tài khoản?
+                <a class="btn-signup" href="#" data-dismiss="modal" data-toggle="modal"
+                  data-target="#modal-signup">
+                  Đăng kí tại đây
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+	<!-- login confirmation -->
+	<div class="modal fade" tabindex="-1" id="modal-login-confirm" role="dialog">
+		<div class="modal-dialog modal-md">
+		<form>
+			<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Xác thực</h4>
+				<button type="button" class="close-form" data-dismiss="modal">
+				<i class="fa fa-times"></i>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+				<label for="confirm">Nhập mã xác thực</label>
+				<input id="confirm" class="form-control form__input" type="text" name="confirm" placeholder="Nhập mã xác thực" />
+				</div>
+				<div class="form-group">
+				<p>
+					Chúng tôi vừa gửi mã xác thực đến email <a href="#">info@hecwin.com</a>. Vui lòng điền mã xác thực để đảm bảo đó là bạn.
+				</p>
+				</div>
+				<div class="text-left form-group">
+				(00:19)
+				<a href="#" class="btn-signup">
+					Gửi lại mã xác thực
+				</a>
+				</div>
+				<div class="form-group">
+				<button type="submit" class="btn-submit">
+					Đăng nhập
+				</button>
+				</div>
+
+				<div class="text-center form-group">
+				<a class="" href="#" data-dismiss="modal" data-toggle="modal"
+					data-target="#modal-login">
+					Đăng nhập bằng tài khoản khác
+				</a>
+				</div>
+			</div>
+			</div>
+		</form>
+		</div>
+	</div>
+	<!-- forget password -->
+	<div class="modal fade" tabindex="-1" id="modal-forgot-password" role="dialog">
+		<div class="modal-dialog modal-md">
+		<form>
+			<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Quên mật khẩu</h4>
+				<button type="button" class="close-form" data-dismiss="modal">
+				<i class="fa fa-times"></i>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+				<label for="email">Email</label>
+				<input id="email" class="form-control form__input" type="email" name="email" placeholder="Nhập email xác thực" />
+				</div>
+				<div class="form-group">
+				<p>
+					Chúng tôi sẽ gửi link xác thực đến email của bạn. Vui lòng truy cập đường dẫn trong email để tiến hành lấy lại mật khẩu.
+				</p>
+				</div>
+
+				<div class="form-group">
+				<button type="submit" class="btn-submit" data-dismiss="modal" data-toggle="modal" data-target="#modal-forget-password-sent">
+					Lấy lại mật khẩu
+				</button>
+				</div>
+
+				<div class="text-center form-group">
+				<a class="" href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal-login">
+					Trở về đăng nhập
+				</a>
+				</div>
+			</div>
+			</div>
+		</form>
+		</div>
+	</div>
+	<!-- forget password sent -->
+	<div class="modal fade" tabindex="-1" id="modal-forget-password-sent" role="dialog">
+		<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h4 class="modal-title">Gửi yêu cầu thành công</h4>
+			<button type="button" class="close-form" data-dismiss="modal">
+				<i class="fa fa-times"></i>
+			</button>
+			</div>
+			<div class="modal-body">
+			<div class="form-group">
+				<p>
+				Chúng tôi đã gửi cho bạn đường dẫn xác thực vào email <a href="#">ainfo@hecwin.com</a>. Vui lòng sử dụng đường dẫn để lấy lại mật khẩu
+				</p>
+			</div>
+
+			<div class="text-center form-group">
+				<a class="btn-signup" href="#" data-dismiss="modal" data-toggle="modal"
+				data-target="#modal-login">
+				Trở về đăng nhập
+				</a>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- signup -->
+    <div class="modal fade" id="modal-signup" role="dialog">
+      <div class="modal-dialog modal-md">
+        <form>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Đăng kí</h4>
+              <button type="button" class="close-form" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <label for="email" class="warning">Email không đúng định dạng</label>
+                <input id="" class="form-control form__input" type="email" name="" placeholder="Nhập email" />
+              </div>
+              <div class="form-group">
+                <label for="email">Họ và tên</label>
+                <input id="" class="form-control form__input" type="text" name="" placeholder="Nhập họ tên của bạn" />
+              </div>
+              <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <div class="input-icons">
+                  <a href="#">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                  </a>
+                  <input id="password" class="form-control form__input" type="password" name="password"
+                    placeholder="Nhập mật khẩu" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password">Xác nhận mật khẩu</label>
+                <div class="input-icons">
+                  <a href="#">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                  </a>
+                  <input id="password" class="form-control form__input" type="password" name="password"
+                    placeholder="Nhập mật khẩu xác nhận" />
+                </div>
+              </div>
+              <div class="form-group checkbox">
+                <input type="checkbox" name="" id="">  Tôi đã đọc và chấp nhận <a href="#">Điều khoản sử dụng</a> và<a href="#"> Điều khoản bảo mật</a>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn-submit" data-dismiss="modal" data-toggle="modal"
+                data-target="#modal-login-success">
+                  Đăng kí
+                </button>
+              </div>
+    
+              <div class="text-center form-group">
+                <a class="btn-signup" href="#" data-dismiss="modal" data-toggle="modal"
+                  data-target="#modal-login">
+                  Tôi đã có tài khoản
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+	<!-- signup success -->
+    <div class="modal fade" tabindex="-1" id="modal-login-success" role="dialog">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Đăng kí thành công</h4>
+            <button type="button" class="close-form" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <p>
+                Chúng tôi đã gửi cho bạn đường dẫn xác thực vào email <a href="#">info@hecwin.com</a>. Vui lòng kích hoạt tài khoản bằng cách click vào đường dẫn xác thực
+              </p>
+            </div>
+  
+            <div class="text-center form-group">
+              <a class="btn-signup" href="#" data-dismiss="modal" data-toggle="modal"
+                data-target="#modal-login">
+                Trở về đăng nhập
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!-- terms of use -->
+	<div class="modal fade" tabindex="-1" id="modal-term-of-use" role="dialog">
+	<div class="modal-dialog modal-md modal-terms">
+		<div class="modal-content">
+		<div class="modal-header">
+			<h4 class="modal-title">Điều khoản sử dụng</h4>
+			<button type="button" class="close-form" data-dismiss="modal">
+			<i class="fa fa-times"></i>
+			</button>
+		</div>
+		<div class="modal-body">
+			<div class="form-group">
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br>
+
+				Why do we use it?
+				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). <br>
+				<br>
+
+				Where does it come from? <br>
+				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. <br>
+				<br>
+				The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. <br>
+				<br>
+				Where can I get some? <br>
+				There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+			</p>
+			</div>
+
+		</div>
+		</div>
+	</div>
+	</div>
+</section>
+<!----- login ----->
+
+
+
+</body>
+</html>
+
+<script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>

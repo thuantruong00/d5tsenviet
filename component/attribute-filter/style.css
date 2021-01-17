@@ -1,0 +1,108 @@
+.filter-box{
+    padding: 10px 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    -webkit-animation: toTop 0.5s;
+            animation: toTop 0.5s;
+} 
+.filter-box label{
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    margin: 10px 0px 10px 0px;
+}
+
+/*----------*/
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    margin-right: 15px;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    border: 2px solid #696969;
+    border-radius: 3px;
+    background-color: white;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 20px;
+    border: solid #00FF00;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -3px;
+    left: 5px;
+}
+.lab-fil{
+    display: block;
+    font-size: 14px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 20px;
+}
+.label-select .active{
+    background: #ECEDED;
+    font-weight: 600;
+}
+.label-select{
+    padding:10px 0px;
+}
+.label-select label{
+    padding: 0px 20px; 
+}
+.lab-fil:hover{
+    text-decoration: none;
+    color: #5D626A;
+}
+
+@media only screen and (max-width:991px){
+    .filter-box{
+        padding: 10px;
+        min-width: 120px;
+    }
+    .filter-box label{
+        font-size: 14px;
+        padding: 5px 0px;
+        margin: 0;
+        display: inline-block;
+    }
+
+    input[type=checkbox] {
+        margin-right: 2px;
+        height: 20px;
+        width: 20px;
+        top: 5px;
+    }
+    input[type=checkbox]:before {
+        width: 20px;
+        height: 20px;
+        top: 0;
+        left: 0;
+    }
+    input[type=checkbox]:checked:after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 20px;
+        border: solid #D5B04D;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+        position: absolute;
+        top: -3px;
+        left: 5px;
+    }
+    .fix-pd{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

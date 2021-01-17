@@ -1,0 +1,107 @@
+/*-- color --*/
+.c-main{
+    color: #d5b04d!important;
+}
+.c-white{
+    color: #fff;
+}
+.c-white-1{
+    color: rgba(255,255,255,.45);
+}
+.c-org{
+    color: #ff6b20!important;
+}
+.c-dark{
+    color:#444444;
+}
+.c-dark-1{
+    color: #444f5e;
+}
+.c-dark-2{
+    color:#B8B8B8;
+}
+.c-blue{
+    color: #0DCFDA;
+}
+.c-green{
+    color: #009641;
+}
+.bg-w{
+    background:#fff;
+}
+.bg-d{
+    background: #F7F7F7;
+}
+.dark-layer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,0.2); 
+}
+.clear{
+    clear: both;
+}
+/*-- important style --*/
+.gap-md, .gap-sm,
+.gap-lg, .gap-xs{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+.gap-sm{
+    height: 30px;
+}
+.gap-xs{
+    height: 10px;
+}
+.gap-lg{
+    height: 100px;
+}
+.mg-pd-none{
+    padding: 0;
+    margin:0;
+}
+.large-size{
+    font-size: 30px!important;
+}
+.medium-size{
+    font-size: 24px!important;
+}
+.small-size{
+    font-size: 16px!important;
+}
+.xsmall-size{
+    font-size: 14px!important;
+}
+.hidden{
+    overflow: hidden!important;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+@media only screen and (max-width:991px){
+    .mg-pd-none-mb{
+        padding: 0;
+	    margin:0;
+    }
+    .xsmall-size{
+        font-size: 8px!important;
+    }
+    .small-size{
+        font-size: 12px!important;
+    }
+    .medium-size{
+        font-size: 14px!important;
+    }
+    .large-size{
+        font-size: 24px!important;
+    }
+
+}

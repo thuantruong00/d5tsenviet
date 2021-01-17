@@ -1,0 +1,42 @@
+.addr-item .info{
+    padding: 0;
+    position: relative;
+}
+.addr-item .info ul{
+    margin: 0;
+}
+.addr-item .info ul li{
+    color: #444f5e;
+}
+.wrap-btn-addr{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+.wrap-btn-addr .btn-addr{
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+.addr-del{
+    background-color: #FFF0E8;
+    color: #FF874A;
+}
+.addr-set-default{
+    background: #ECECEC;
+    color: #444f5e;
+}
+.wrap-addr-item{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #F6F6F6;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width:500px){
+    .wrap-btn-addr .btn-addr{
+        font-size: 14px;
+        margin-left: 5px;
+        padding: 5px;
+    }
+}

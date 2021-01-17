@@ -1,0 +1,29 @@
+.amount{
+    background: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    position: relative;
+}
+.amount  button{
+    border: none;
+    background: none;
+    position: absolute;
+    z-index: 20;
+    top: 10px;
+}
+.amount .decr{
+    left: 20px;
+}
+.amount .incr{
+    right: 20px;
+}
+.amount  button:focus{
+    outline: none;
+}
+.amount .num{
+    text-align: center;
+    width: 100%;
+    display: block;
+}

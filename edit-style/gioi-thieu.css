@@ -1,0 +1,14 @@
+.box-slogan{
+    position: relative;
+}
+.box-slogan .symbol{
+    position: absolute;
+    bottom: -75px;
+    right: 30px;
+}
+.border-1{
+    border: 1px solid #DDDFE1;
+}
+.border-radius-8{
+    border-radius: 8px;
+}

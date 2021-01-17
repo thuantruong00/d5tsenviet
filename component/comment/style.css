@@ -1,0 +1,49 @@
+.comment-block>div{
+    float: left;
+}
+.comment-block .avt{
+    width: 40px;
+    display: inline-block;
+    padding: 2px;
+}
+.comment-block .avt .wrap{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.comment-block .content-left{
+    display: inline-block;
+    width: calc(100% - 40px);
+    font-size: 14px;
+    padding-left: 10px;
+}
+.bg01{
+    background: green;
+}
+.bg02{
+    background: blue;
+}
+.bg03{
+    background: red;
+}
+.comment-block .vote{
+    fill:#C0C4C8;
+}
+.comment-block .react button{
+    background: none;
+    border: none;
+    font-weight: 600;
+    color: #C0C4C8;
+    margin-right: 20px;
+}
+.comment-block .react button svg{
+    transform: translateY(-2px);
+}
+.comment-block .react button.active{
+    color: #D5B04D;
+}
+.comment-block .react .active .vote{
+    fill: #D5B04D!important;
+}

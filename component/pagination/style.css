@@ -1,0 +1,24 @@
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #D5B04D;
+    border-color: #D5B04D;
+    
+}
+.pagination li a:hover{
+    color: #5D626A;
+}
+
+.page-link{
+    color: #5D626A;
+    border: none;
+    border-radius: 50%!important;
+    margin-right: 10px;
+    width: 35px;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.4s;
+    padding: 0px;
+    height: 35px;
+    line-height: 35px;
+}

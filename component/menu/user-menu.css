@@ -1,0 +1,152 @@
+.user-menu ul{
+    margin :0;
+}
+.user-menu ul li{
+    display: block;
+}
+.user-menu ul li a{
+    display: block;
+    color: #444;
+    padding:10px 20px ;
+    border-radius: 8px;
+    transition: all 0.4s;
+    margin-bottom: 10px;
+}
+.user-menu ul li a.active{
+    background: rgba(0,0,0,.1);
+}
+.user-menu ul li a:hover{
+    background: rgba(0,0,0,.1);
+}
+.wrap-account{
+    background: #fff;
+    border-radius: 12px;
+}
+.label-basic{
+    display: block;
+}
+.label-gender{
+    display: inline-block;
+    margin-right: 40px;
+    color: #444;
+}
+.input-basic{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #444;
+    opacity: 0.5;
+    transition: all 0.4s;
+    margin-bottom: 10px;
+}
+.input-basic:focus{
+    border-bottom: 1px solid #D5B04D;
+}
+.wrap-account form{
+    color: #444;
+}
+.wrap-account form input:focus{
+    outline: none;
+}
+.wrap-account{
+    padding: 20px;
+}
+.wrap-account .submit,.add-new{
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: #D5B04D;
+    color: #fff;
+}
+/* --------------------------- */
+.avt-change .wrap-img img{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+}
+.avt-change .wrap-img {
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.avt-change{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.wrap-avt{
+    height: 100%;
+}
+.change{
+    border: 2px solid #D5B04D;
+    border-radius: 8px;
+    background: none;
+    color: #D5B04D;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+/* ----------menu user mobile--------- */
+.title-menu a{
+    display: block;
+    color: #444;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.4s;
+    margin-bottom: 10px;
+    background: #DEEDE4;
+    color: #D5B04D;
+    position: relative;
+}
+.title-menu a i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+
+
+
+@media only screen and (max-width:991px){
+    .wrap-avt{
+        height: 400px;
+    }
+    /* ----------menu user mobile--------- */
+    .hide-mb{
+        display: none;
+
+    }
+    .user-menu{
+        -webkit-animation: toTop 0.7s;
+                animation: toTop 0.7s;
+        position: relative;
+        top: 0;
+    }
+    @-webkit-keyframes toTop {
+        from{
+            opacity: 0;
+            top: 30px;
+        }
+        to{
+            opacity: 1;
+            top: 0;
+        }
+    }
+    @keyframes toTop {
+        from{
+            opacity: 0;
+            top: 30px;
+        }
+        to{
+            opacity: 1;
+            top: 0;
+        }
+    }
+
+
+}
