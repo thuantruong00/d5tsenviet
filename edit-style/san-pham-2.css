@@ -1,0 +1,30 @@
+.content-load{
+    width: 100%;
+}
+.content-load #show-content{
+    width: 100%;
+    height: auto;
+}
+.content-load #show-content>img{
+    width: 100%;
+    height: auto;
+}
+
+.content-load #show-content>video{
+    border: 0;
+    height: auto;
+    width: 100%;
+    outline: 0;
+}
+
+.slider-product .element-load{
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.owl-dot{
+    display: none;
+}

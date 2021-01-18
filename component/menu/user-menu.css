@@ -98,7 +98,7 @@
     border-radius: 8px;
     transition: all 0.4s;
     margin-bottom: 10px;
-    background: #DEEDE4;
+    background: rgba(213, 176, 77, .1);;
     color: #D5B04D;
     position: relative;
 }

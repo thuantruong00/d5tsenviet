@@ -82,3 +82,30 @@
         height: 300px;
     }
 }
+
+.card-a{
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+.card-a:hover, .card-a:focus{
+    border: none;
+    background-color: white;
+    box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.08);
+}
+.card-a:hover .card-a-title{
+    color: #ab741d;
+}
+@media screen and (max-width: 991px){
+    .card-a{
+        border: 0;
+        background-color: white;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+}
+}

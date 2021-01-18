@@ -17,8 +17,8 @@
 }
 .wrap-form input:focus,
 .wrap-form textarea:focus{
-    border-bottom: 1px solid #2abce7;
-    box-shadow: 0px 1px 2px 1px  #2abce7;
+    border-bottom: 1px solid #d5b04d;
+    box-shadow: 0px 1px 2px 1px  #d5b04d;
     outline: none;
 }
 .wrap-form input[type=checkbox]{
@@ -66,14 +66,14 @@
     left: 0;
     height: 15px;
     width: 15px;
-    border: 1px solid #2abce7;
+    border: 1px solid #d5b04d;
 } */
 
 .svgCheck{
     position: absolute;
     left: 0;
     top: 0;
-    fill: #2abce7;
+    fill: #d5b04d;
 }
 .check0{
     position: absolute;
@@ -82,7 +82,7 @@
     height: 14px;
     width: 14px;
     background: none;    
-    border: 1px solid #2abce7;
+    border: 1px solid #d5b04d;
     border-radius: 3px;
 }
 .checkTrue{
@@ -112,8 +112,8 @@
     border-radius: 0;
 }
 .edit-form-ctrl:focus{
-    border-bottom: 1px solid #2abce7;
-    box-shadow: 0px 1px 2px 1px #2abce7;
+    border-bottom: 1px solid #d5b04d;
+    box-shadow: 0px 1px 2px 1px #d5b04d;
     outline: none;
 }
 .wrap-form input[type=date]::-webkit-calendar-picker-indicator{
@@ -143,7 +143,7 @@
 }
 .confirm{
     display: inline-block;
-    background: #2abce7;
+    background: #d5b04d;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -261,4 +261,35 @@
         height: 50vh!important;
     }
 
+}
+
+.input-group-0{
+    position: relative;
+}
+
+.input-group-0 input,
+.input-group-0 textarea{
+    box-shadow: 0 0 0 0 !important;
+}
+
+.input-group-0 label{
+    font-size: 14px;
+    color: rgba(68,79,94,0.5);
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    transition: .4s;
+    cursor: text;
+}
+
+.input-group-0 input:focus ~ label,
+.input-group-0 textarea:focus ~ label,
+.input-group-0 input.fill ~ label,
+.input-group-0 textarea.fill ~ label,
+.input-group-0 input:valid ~ label{
+    color: #d5b04d;
+    font-size: 10px;
+    font-weight: bold;
+    top: -4px !important;   
+    transition: .4s;
 }

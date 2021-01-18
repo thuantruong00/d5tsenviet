@@ -29,8 +29,7 @@
 .wrap-search{
     position: relative;
     display: inline-block;
-    width: 73%;
-    margin-left: 5%;
+    width: 100%;
 }
 .wrap-search input{
     background: #FBFBFB;
@@ -104,7 +103,7 @@
 }
 .btn-title{
     display: inline-block;
-    padding: 10px 8px;
+    padding: 10px 0px;
     transition: all 0.4s;
     position: relative;
     font-weight: 600;
@@ -113,8 +112,8 @@
 .btn-title .count{
     position: absolute;
     font-size: 12px;
-    top: 0;
-    left: 0;
+    top: 2px;
+    left: -5px;
     background: #FF6B20;
     height: 20px;
     width: 20px;
@@ -131,15 +130,14 @@
     position: relative;
     top: -3px;
 }
-.wrap-block-right>ul>li:nth-child(1),
+/* .wrap-block-right>ul>li:nth-child(1),
 .wrap-block-right>ul>li:nth-child(2)
 {
     float: left;
-}
+} */
 .wrap-block-right .icon{
-    padding: 10px;
+    padding: 10px 5px;
     position: relative;
-    top: 5px;
 }
 .wrap-language-menu{
     position: absolute;
@@ -235,7 +233,25 @@
     -o-object-fit: cover;
        object-fit: cover;
 }
-@media only screen and (max-width:1150px) and (min-width:991px){
+
+/* ---   flex system   ---*/
+.flex-sys-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-col{
+    width: fit-content;
+    align-self: center;
+}
+.search-col{
+    width: 53%;
+    align-self: center;
+}
+.right-col{
+    width: 37%;
+    align-self: center;
+}
+@media only screen and (max-width:1200px) and (min-width:991px){
     .wrap-menu ul li a {
         padding: 5px 5px 20px 5px;
     }
@@ -248,12 +264,12 @@
     .wrap-block-right .icon {
         padding: 0;
         position: relative;
-        top: 5px;
+        top: 7px;
     }
     .result-img {
         padding: 0;
         position: relative;
-        top: 5px;
+        top: 7px;
         display: inline-block;
         z-index: 500;
     }
@@ -278,4 +294,43 @@
     .obj-bg-04{
         width: 700px!important;
     }
+    /* ------ search ------ */
+    .wrap-search button{
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+    .wrap-search input{
+        padding-left: 35px;
+    }
+    /* ----- flex col ----- */
+    .logo-col{
+        width: fit-content;
+        align-self: center;
+        text-align: center;
+    }
+    .search-col{
+        width: 68%;
+        align-self: center;
+    }
+    .right-col{
+        width: fit-content;
+        align-self: center;
+        text-align: center;
+    }
+    .right-col>.nav-bars{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+    .width100-mb{
+        width: 100%;
+        max-width: 100%!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+}
+.hover-btn:hover .wrap-sub-menu{
+    display: block;
 }
