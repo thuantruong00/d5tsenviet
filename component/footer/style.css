@@ -72,3 +72,11 @@
         font-size: 16px!important;
     }
 }
+.footer-absolute .endline{
+    display: none;
+}
+@media only screen and (max-width:440px){
+    .footer-absolute .endline{
+        display: block;
+    }
+}
